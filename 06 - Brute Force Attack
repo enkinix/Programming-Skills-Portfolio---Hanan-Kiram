@@ -1,0 +1,13 @@
+correct_password = "12345"
+attempts_remaining = 5
+while attempts_remaining > 0:
+    user_guess = input("Enter the password: ")
+    if user_guess == correct_password:
+        print("Access Granted. Welcome back!")
+        break
+    else:
+        attempts_remaining -= 1
+        if attempts_remaining > 0:
+            print(f"Incorrect password. You have {attempts_remaining} attempts left.")
+        else:
+            print("Access Denied. The authorities have been alerted.")
