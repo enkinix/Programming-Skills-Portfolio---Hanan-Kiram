@@ -1,0 +1,14 @@
+def check_even_odd(number):
+    if number % 2 == 0:
+        return f"{number} is an Even number."
+    else:
+        return f"{number} is an Odd number."
+def main():
+    try:
+        user_num = int(input("Enter a number to check: "))
+        result_message = check_even_odd(user_num)
+        print(result_message)
+    except ValueError:
+        print("Please enter a valid whole number.")
+if __name__ == "__main__":
+    main()
