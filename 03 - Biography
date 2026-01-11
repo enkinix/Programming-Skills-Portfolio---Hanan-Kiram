@@ -1,0 +1,13 @@
+full_name = input("Enter your full name: ")
+hometown = input("Enter your hometown: ")
+try:
+    age = int(input("Enter your age (as a number): "))
+except ValueError:
+    print("Error: Please enter age as a numeric value (e.g., 25).")
+    age = "Unknown"
+user_info = {
+    "name": full_name,
+    "hometown": hometown,
+    "age": age
+}
+print(f"Name: {user_info['name']}\nHometown: {user_info['hometown']}\nAge: {user_info['age']}")
